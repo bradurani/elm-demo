@@ -6,7 +6,7 @@ width = 7
 height = 6
 
 boardHeight = 700
-boardWidth = boardHeight * (width // height)
+boardWidth = 816
 
 bg = 
   rect (toFloat boardWidth) (toFloat boardHeight) |> filled blue
