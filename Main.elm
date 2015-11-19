@@ -1,3 +1,14 @@
-import Html exposing (text)
+import Color exposing (..)
+import Graphics.Element exposing (..)
+import Graphics.Collage exposing (..)
 
-main = text "Hello, World!"
+width = 7
+height = 6
+
+boardHeight = 700
+boardWidth = boardHeight * (width // height)
+
+bg = 
+  rect (toFloat boardWidth) (toFloat boardHeight) |> filled blue
+
+main = collage boardWidth boardHeight [bg]
